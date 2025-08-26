@@ -1,9 +1,10 @@
 from abc import ABC, abstractmethod
 
-class EmpresaHTTP(ABC):
+class EmpresaExtractInterface(ABC):
     """
     Classe modelo para extração de dados.
     """
+
     @abstractmethod
     def get(self):
         """
