@@ -5,7 +5,8 @@ class EmpresaLoad(EmpresaLoadInterface):
         import os
         if not os.path.exists('src/datasets'):
             os.makedirs('src/datasets')
-        dados.to_csv('src/datasets/rawEmpresas.csv')   
+        else:
+            dados.to_csv('src/datasets/rawEmpresas.csv')   
         return dados
     
     def saveProcessCsv(self, dados):
