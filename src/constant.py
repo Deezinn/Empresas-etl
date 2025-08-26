@@ -1,0 +1,1 @@
+APIURL = {'empresas': 'http://dados.recife.pe.gov.br/datastore/dump/87fc9349-312c-4dcb-a311-1c97365bd9f5?format=json'}
