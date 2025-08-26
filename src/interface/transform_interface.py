@@ -1,12 +1,13 @@
 from abc import ABC, abstractmethod
 
-class EmpresaTrasnform(ABC):
+class EmpresaTransformInterface(ABC):
     """
-    Classe modelo para transformação de dados.
+    Interface para transformação de dados da API de empresas.
     """
+    
     @abstractmethod
-    def transform(self):
+    def sliceJson(self, dados):
         """
-        Método de transformar os dados da api
+        Separa o que for fields e records.
         """
         pass

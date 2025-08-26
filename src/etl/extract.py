@@ -1,4 +1,4 @@
-from src.interface.extract_interface import EmpresaHTTP
+from src.interface.extract_interface import EmpresaExtractInterface
 from src.constant import APIURL
 
 from xml.dom import NotFoundErr
@@ -6,9 +6,7 @@ from xml.dom import NotFoundErr
 from requests import HTTPError, JSONDecodeError
 import requests
 
-import json
-
-class EmpresaExtract(EmpresaHTTP):
+class EmpresaExtract(EmpresaExtractInterface):
     def __init__(self):
         self.__jsonData = None
 
