@@ -1,6 +1,5 @@
 from src.etl import EmpresaExtract,EmpresaTransform,EmpresaLoad
 from src.utils import separatorJson
-import pandas as pd
 
 class EmpresaPipeline:
     def __init__(self):
