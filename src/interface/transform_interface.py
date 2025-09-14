@@ -6,8 +6,8 @@ class EmpresaTransformInterface(ABC):
     """
     
     @abstractmethod
-    def sliceJson(self, dados):
+    def transformDataframe(self,json_fields, json_records):
         """
-        Separa o que for fields e records.
+        Transformar os dados em dataframe
         """
         pass

@@ -1,9 +1,11 @@
+from src.pipeline import EmpresaPipeline
+
 class Main:
     def __init__(self):
-        pass
+        self.__pipeline = EmpresaPipeline()
 
     def run(self):
-        print('hello pipeline')
+        EmpresaPipeline().run_pipeline()
 
 
 if __name__ == "__main__":
