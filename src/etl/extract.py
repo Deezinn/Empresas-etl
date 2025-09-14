@@ -1,8 +1,6 @@
 from src.interface.extract_interface import EmpresaExtractInterface
 from src.constant import APIURL
 
-from xml.dom import NotFoundErr
-
 from requests import HTTPError, JSONDecodeError
 import requests
 
@@ -11,12 +9,10 @@ class EmpresaExtract(EmpresaExtractInterface):
         self.__jsonData = None
 
     def get(self):
-
         if not APIURL:
-            raise NotFoundErr("Não consegui achar o link da api no arquivo de constantes.")
+            raise FileNotFoundError("Não consegui achar o link da api no arquivo de constantes.")
         if APIURL == {}:
             raise ValueError("Constante com os valores vázio, impossível fazer extração.")
-        
         try:
             r = requests.get(APIURL['empresas'])
             r.raise_for_status()

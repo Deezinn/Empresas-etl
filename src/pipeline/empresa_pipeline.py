@@ -1,4 +1,6 @@
-from src.etl import EmpresaExtract,EmpresaTransform, EmpresaLoad
+from src.etl import EmpresaExtract,EmpresaTransform,EmpresaLoad
+from src.utils import separatorJson
+import pandas as pd
 
 class EmpresaPipeline:
     def __init__(self):
@@ -8,10 +10,13 @@ class EmpresaPipeline:
     
     def run_pipeline(self):
         json_data = self.__extract.get()
-        result_raw_data, result_process_data = self.__transform.sliceJson(json_data)
-        self.__load.saveRawCsv(result_raw_data)
-        self.__load.saveProcessCsv(result_process_data)
+        
+        # json_fields mostra cada coluna
+        # json_record mostra os valores das colunas
+        
+        json_fields, json_records = separatorJson(json_data)
+        self.__transform.transformDataframe(json_fields, json_records)
+        
+        # self.__load.saveRawCsv(result_raw_data)
+        # self.__load.saveProcessCsv(result_process_data)
 
-if __name__ == "__main__":
-    eP = EmpresaPipeline()
-    eP.run_pipeline()
