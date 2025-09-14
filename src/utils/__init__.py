@@ -1,1 +1,1 @@
-from .separatorJson import separatorJson
+from .separator_json import separatorJson
