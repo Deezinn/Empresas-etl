@@ -5,5 +5,5 @@ class EmpresaTransform(EmpresaTransformInterface):
     def __init__(self):
         pass
     
-    def transformDataframe(self,json_fields, json_records):
+    def transformToD(self,json_fields, json_records):
         pass
