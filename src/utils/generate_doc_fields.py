@@ -3,10 +3,10 @@ import os
 
 
 def denerateDocFields(fields):
-    output = 'src/docs/fields.txt'
+    output = 'docs/fields.txt'
     
     try:
-        os.makedirs(output[:8], exist_ok=True)
+        os.makedirs(output[:4], exist_ok=True)
         print("Diretório criado com sucesso")
     except OSError as error:
         print("Diretório não foi criado com sucesso.", error)
