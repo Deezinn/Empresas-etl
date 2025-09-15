@@ -6,5 +6,4 @@ class EmpresaTransform(EmpresaTransformInterface):
         pass
     
     def transformDataframe(self,json_fields, json_records):
-        print(json_fields)
-        print(json_records)
+        pass

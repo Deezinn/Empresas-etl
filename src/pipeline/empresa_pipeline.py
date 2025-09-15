@@ -1,5 +1,5 @@
 from src.etl import EmpresaExtract,EmpresaTransform,EmpresaLoad
-from src.utils import separatorJson
+from src.utils import separatorJson, denerateDocFields
 
 class EmpresaPipeline:
     def __init__(self):
@@ -14,6 +14,7 @@ class EmpresaPipeline:
         # json_record mostra os valores das colunas
         
         json_fields, json_records = separatorJson(json_data)
+        denerateDocFields(json_fields)
         self.__transform.transformDataframe(json_fields, json_records)
         
         # self.__load.saveRawCsv(result_raw_data)
