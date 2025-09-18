@@ -1,4 +1,4 @@
-from src.constant import DESCRICAO
+from src.utils.constant import DESCRICAO
 import os 
 
 

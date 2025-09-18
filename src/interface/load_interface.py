@@ -6,7 +6,7 @@ class EmpresaLoadInterface(ABC):
     """
     
     @abstractmethod
-    def saveRawCsv(self, dados):
+    def saveRawCsv(self, campos, dados):
         """
         Salva o csv com dados não processados
         """

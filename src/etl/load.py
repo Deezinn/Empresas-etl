@@ -1,13 +1,15 @@
 from src.interface import EmpresaLoadInterface
+import pandas as pd
 
 class EmpresaLoad(EmpresaLoadInterface):
-    def saveRawCsv(self, dados):
+    def saveRawCsv(self, campos, dados):
         import os
-        if not os.path.exists('src/datasets'):
-            os.makedirs('src/datasets')
+        if not os.path.exists('csv/raw/'):
+            os.makedirs('csv/raw/')
         else:
-            dados.to_csv('src/datasets/rawEmpresas.csv')   
-        return dados
+            pd.DataFrame(dados).to_csv('csv/raw/Fields.csv')  
+            pd.DataFrame(campos).to_csv('csv/raw/Empresas.csv')
+        return pd.DataFrame(dados), pd.DataFrame(campos)
     
     def saveProcessCsv(self, dados):
         """

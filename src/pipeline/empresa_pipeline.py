@@ -17,6 +17,6 @@ class EmpresaPipeline:
         denerateDocFields(json_fields)
         self.__transform.transformDataframe(json_fields, json_records)
         
-        # self.__load.saveRawCsv(result_raw_data)
+        self.__load.saveRawCsv(json_fields, json_records)
         # self.__load.saveProcessCsv(result_process_data)
 

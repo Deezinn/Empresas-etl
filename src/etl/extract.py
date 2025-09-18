@@ -1,5 +1,5 @@
 from src.interface.extract_interface import EmpresaExtractInterface
-from src.constant import APIURL
+from src.utils.constant import APIURL
 
 from requests import HTTPError, JSONDecodeError
 import requests
