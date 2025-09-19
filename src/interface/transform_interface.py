@@ -6,7 +6,7 @@ class EmpresaTransformInterface(ABC):
     """
     
     @abstractmethod
-    def transformDataframe(self,json_fields, json_records):
+    def transform(self,json_fields, json_records):
         """
         Transformar os dados em dataframe
         """
