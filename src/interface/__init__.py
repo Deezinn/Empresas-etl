@@ -1,3 +1,4 @@
 from .extract_interface import EmpresaExtractInterface
 from .transforms import EmpresaTransformCsvInterface, EmpresaTransformJsonInterface
 from .load_interface import  EmpresaLoadInterface
+from .pipeline_interface import EmpresaPipelineInterface

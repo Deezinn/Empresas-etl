@@ -1,7 +1,8 @@
 from src.etl import EmpresaExtract,EmpresaTransformJson,EmpresaTransformCsv,EmpresaLoad
 from src.utils import separatorJson, denerateDocFields
+from src.interface import EmpresaPipelineInterface
 
-class EmpresaPipeline:
+class EmpresaPipeline(EmpresaPipelineInterface):
     def __init__(self):
         self.__extract = EmpresaExtract()  
         self.__transformJson = EmpresaTransformJson()
