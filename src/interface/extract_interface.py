@@ -6,8 +6,20 @@ class EmpresaExtractInterface(ABC):
     """
 
     @abstractmethod
-    def get(self):
+    def extract_data(self):
         """
-        Método de extração dos dados da api
+        Método orquestrador da classe EmpresaExtract
+        """
+        pass
+    
+    def __get_json_api(self):
+        """
+        Método de extração dos dados em json
+        """
+        pass
+    
+    def __get_csv_api(self):
+        """
+        Método de extração dos dados em csv
         """
         pass
