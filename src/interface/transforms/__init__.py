@@ -1,2 +1,2 @@
-from .transform_interface_json import EmpresaTransformJsonInterface
-from .transform_interface_csv import EmpresaTransformCsvInterface
+from .transform_interface_ativa import EmpresaAtivaTransformInterface
+from .transform_interface_inativa import EmpresaInativaTransformInterface

@@ -8,7 +8,7 @@ class EmpresaPipelineInterface(ABC):
     @abstractmethod
     def run_pipeline(self):
         """
-        Método orquestrador de toda a etl
+        Método orquestrador de toda a etl.
         """
         pass
     

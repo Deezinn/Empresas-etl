@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class EmpresaTransformJsonInterface(ABC):
+class EmpresaInativaTransformInterface(ABC):
     """
     Interface para transformação de dados da API de empresas.
     """
