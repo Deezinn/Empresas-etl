@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class EmpresaTransformInterface(ABC):
+class EmpresaTransformCsvInterface(ABC):
     """
     Interface para transformação de dados da API de empresas.
     """

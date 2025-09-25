@@ -1,7 +1,8 @@
 from src.interface.extract_interface import EmpresaExtractInterface
 from src.utils.constant import APIURLJSON, APIURLCSV
-from requests import HTTPError, JSONDecodeError
+
 import requests
+from requests import HTTPError, JSONDecodeError
 
 class EmpresaExtract(EmpresaExtractInterface):
     def __init__(self):

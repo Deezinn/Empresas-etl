@@ -1,7 +1,7 @@
-from src.interface import EmpresaTransformInterface
+from src.interface import EmpresaTransformJsonInterface
 import pandas as pd
 
-class EmpresaTransform(EmpresaTransformInterface):
+class EmpresaTransformJson(EmpresaTransformJsonInterface):
     def __init__(self):
         self.__rawFields = None
         self.__rawRecords = None
