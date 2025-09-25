@@ -1,4 +1,30 @@
-APIURL = {'empresas': 'http://dados.recife.pe.gov.br/datastore/dump/87fc9349-312c-4dcb-a311-1c97365bd9f5?format=json'}
+APIURLJSON = [
+    {'empresasAtivasJson': 'http://dados.recife.pe.gov.br/datastore/dump/87fc9349-312c-4dcb-a311-1c97365bd9f5?format=json'},
+    {'empresasInativasJson': 'http://dados.recife.pe.gov.br/datastore/dump/edc40277-c83f-4fa3-bfa5-1b85881921d8?format=json'}
+]
+
+APIURLCSV = [
+    {'empresaAtivaCsv': 'http://dados.recife.pe.gov.br/dataset/eb9b8a72-6e51-4da2-bc2b-9d83e1f198b9/resource/87fc9349-312c-4dcb-a311-1c97365bd9f5/download/empresasativender.csv'},
+    {'empresaInativaCsv': 'http://dados.recife.pe.gov.br/dataset/eb9b8a72-6e51-4da2-bc2b-9d83e1f198b9/resource/edc40277-c83f-4fa3-bfa5-1b85881921d8/download/empresasinativender.csv'}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 DESCRICAO = {
     "_id": "Identificador único da empresa",
