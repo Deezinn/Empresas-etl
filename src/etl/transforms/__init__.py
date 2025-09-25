@@ -1,2 +1,2 @@
-from .transform_json import EmpresaTransformJson
-from .transform_csv import EmpresaTransformCsv
+from .transform_ativa import EmpresaAtivaTransform
+from .transform_inativa import EmpresaInativaTransform
