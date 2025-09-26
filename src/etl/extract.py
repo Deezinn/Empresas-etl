@@ -13,7 +13,7 @@ class EmpresaExtract(EmpresaExtractInterface):
         
     def extract_data(self):
         ativosJson, inativosJson = self.__get_json_api()
-        ativosCsv, inativosCsv = self.__get_csv_api()w
+        ativosCsv, inativosCsv = self.__get_csv_api()
         return ativosJson, inativosJson, ativosCsv, inativosCsv
         
     def __get_json_api(self):

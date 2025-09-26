@@ -4,12 +4,13 @@ import pandas as pd
 class EmpresaLoad(EmpresaLoadInterface):
     def saveRawCsv(self, dadosAtivos, dadosInativos, ativosCampos,inativoCampos):
         import os
-        if not os.path.exists('data/csv/raw/'):
-            os.makedirs('data/csv/raw/')
-        else:
-            pd.DataFrame(ativosCampos).to_csv('data/csv/raw/EmpresaCampos.csv') 
-            pd.DataFrame(dadosAtivos).to_csv('data/csv/raw/EmpresasAtivas.csv')  
-            pd.DataFrame(dadosInativos).to_csv('data/csv/raw/EmpresasInativas.csv')
+        os.makedirs('data/csv/raw/campos/')
+        os.makedirs('data/csv/raw/dados/')
+
+        pd.DataFrame(ativosCampos).to_csv('data/csv/raw/campos/EmpresaCamposAtivas.csv') 
+        pd.DataFrame(inativoCampos).to_csv('data/csv/raw/campos/EmpresaCamposInativas.csv') 
+        pd.DataFrame(dadosAtivos).to_csv('data/csv/raw/dados/EmpresasAtivas.csv')  
+        pd.DataFrame(dadosInativos).to_csv('data/csv/raw/dados/EmpresasInativas.csv')
        
     
     def saveProcessCsv(self, dados):
