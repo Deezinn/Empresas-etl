@@ -7,12 +7,10 @@ def denerateDocFields(fields):
     
     try:
         os.makedirs(output[:4], exist_ok=True)
-        print("Diretório criado com sucesso")
     except OSError as error:
         print("Diretório não foi criado com sucesso.", error)
     else:
         if not fields:
-            print("Não consegui achar os campos")
             return
         with open(output, "w", encoding="utf-8") as f:
             f.write("Campos e seu significados com seus tipos. \n\n\n")
