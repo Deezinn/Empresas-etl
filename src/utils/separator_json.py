@@ -1,4 +1,3 @@
-
 def separatorJson(json):
     fields = None
     records = None

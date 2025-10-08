@@ -12,12 +12,6 @@ class EmpresaExtractInterface(ABC):
         """
         pass
     
-    def __get_json_api(self):
-        """
-        Método de extração dos dados em json
-        """
-        pass
-    
     def __get_csv_api(self):
         """
         Método de extração dos dados em csv

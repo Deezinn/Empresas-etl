@@ -1,4 +1,4 @@
 from src.main import Main
-from .utils.constant import APIURLJSON, APIURLCSV
+from .utils.constant import APIURLCSV
 from .interface import EmpresaExtractInterface,EmpresaLoadInterface,EmpresaAtivaTransformInterface,EmpresaInativaTransformInterface,EmpresaPipelineInterface
 from .utils import separatorJson
