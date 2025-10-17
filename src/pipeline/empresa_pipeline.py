@@ -1,5 +1,5 @@
 from src.etl import EmpresaExtract,EmpresaAtivaTransform,EmpresaInativaTransform,EmpresaLoad
-from src.utils import separatorJson, denerateDocFields
+from src.utils import separatorJson, generateDocFields
 from src.interface import EmpresaPipelineInterface
 
 class EmpresaPipeline(EmpresaPipelineInterface):
@@ -14,7 +14,7 @@ class EmpresaPipeline(EmpresaPipelineInterface):
         
         # Colunas dos inativos é igual ao dos ativos
         self.__load.saveRawCsv(ativosCsv, inativosCsv)
-        # denerateDocFields(ativosCsv)
+        generateDocFields(ativosCsv)
         
         # dadosProcessadosAtivos = self.__transformAtiva.transform(ativosCampos, ativosDados)
         dadosProcessadosInativos = self.__transformInativa.transform(inativosCsv)

@@ -8,27 +8,8 @@ APIURLCSV = [
     {'empresaInativaCsv': 'http://dados.recife.pe.gov.br/dataset/eb9b8a72-6e51-4da2-bc2b-9d83e1f198b9/resource/edc40277-c83f-4fa3-bfa5-1b85881921d8/download/empresasinativender.csv'}
 ]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 DESCRICAO = {
-    "_id": "Identificador único da empresa",
-    "cnpj": "Número do CNPJ",
+    "ï»¿cnpj": "Número do CNPJ",
     "razao_social": "Razão social da empresa",
     "nome_fantasia": "Nome fantasia da empresa",
     "cod_logradouro": "Código do logradouro",

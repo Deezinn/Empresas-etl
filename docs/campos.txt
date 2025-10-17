@@ -1,0 +1,69 @@
+Campos e significados: 
+
+
+Campo -> ï»¿cnpj,
+ significado:Número do CNPJ 
+ 
+Campo -> razao_social,
+ significado:Razão social da empresa 
+ 
+Campo -> nome_fantasia,
+ significado:Nome fantasia da empresa 
+ 
+Campo -> cod_logradouro,
+ significado:Código do logradouro 
+ 
+Campo -> nome_logradouro,
+ significado:Nome do logradouro 
+ 
+Campo -> numero_residencia,
+ significado:Número da residência 
+ 
+Campo -> numero_lote,
+ significado:Número do lote 
+ 
+Campo -> cod_bairro,
+ significado:Código do bairro 
+ 
+Campo -> nome_bairro,
+ significado:Nome do bairro 
+ 
+Campo -> situacao_empresa,
+ significado:Situação da empresa (ativa, inativa, etc.) 
+ 
+Campo -> data_abertura_empresa,
+ significado:Data de abertura da empresa 
+ 
+Campo -> data_encerramento,
+ significado:Data de encerramento da empresa 
+ 
+Campo -> cod_grupo,
+ significado:Código do grupo econômico 
+ 
+Campo -> nome_grupo,
+ significado:Nome do grupo econômico 
+ 
+Campo -> cnae,
+ significado:Código CNAE 
+ 
+Campo -> desc_atividade,
+ significado:Descrição da atividade 
+ 
+Campo -> atividade_principal,
+ significado:Atividade principal 
+ 
+Campo -> atividade_vig_sanitaria,
+ significado:Atividade com vigência sanitária 
+ 
+Campo -> atividade_predominante,
+ significado:Atividade predominante 
+ 
+Campo -> incomodo,
+ significado:Tipo de incômodo gerado 
+ 
+Campo -> latitude,
+ significado:Latitude do endereço 
+ 
+Campo -> longitude,
+ significado:Longitude do endereço 
+ 
