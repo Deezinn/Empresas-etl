@@ -6,8 +6,15 @@ class EmpresaInativaTransformInterface(ABC):
     """
     
     @abstractmethod
-    def transform(self,json_fields, json_records):
+    def transform(self, inativosCsv):
         """
-        Transformar os dados em dataframe
+        Processar os dados (atuará como orquestrador)
+        """
+        pass
+    
+    @abstractmethod
+    def __transform_to_dataframe():
+        """
+        Transformar em dataframe os dados de empresas Inativas
         """
         pass
