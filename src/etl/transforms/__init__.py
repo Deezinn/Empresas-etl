@@ -1,2 +1,0 @@
-from .transform_ativa import EmpresaAtivaTransform
-from .transform_inativa import EmpresaInativaTransform
