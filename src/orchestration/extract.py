@@ -1,8 +1,6 @@
-from unittest import result
-import aiohttp
-from core.constants.urls import urls
 from entities.empresas.http.fetch import Http
 
+import aiohttp
 import asyncio
 
 class Extract:
@@ -24,7 +22,5 @@ class Extract:
             ]
             return await asyncio.gather(*tasks, return_exceptions=True)
 
-e = Extract(http=Http())
-print(asyncio.run(e.run(cfg=urls)))
 
  
