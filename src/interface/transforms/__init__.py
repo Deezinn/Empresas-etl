@@ -1,2 +1,0 @@
-from .transform_interface_ativa import EmpresaAtivaTransformInterface
-from .transform_interface_inativa import EmpresaInativaTransformInterface
