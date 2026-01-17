@@ -1,4 +1,5 @@
 from core.http.fetch import Http
+from core.logging import log
 
 import aiohttp
 import asyncio
