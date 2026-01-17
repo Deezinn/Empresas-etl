@@ -1,6 +1,6 @@
 from email import header
 from io import StringIO
-from entities.empresas.http import Http
+from core.http.fetch import Http
 
 from orchestration.extract import Extract
 from core.constants.urls import urls

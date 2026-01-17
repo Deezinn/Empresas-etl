@@ -1,4 +1,4 @@
-from entities.empresas.http.fetch import Http
+from core.http.fetch import Http
 
 import aiohttp
 import asyncio
@@ -21,6 +21,3 @@ class Extract:
                 ) for serie, url in cfg.items()
             ]
             return await asyncio.gather(*tasks, return_exceptions=True)
-
-
- 
